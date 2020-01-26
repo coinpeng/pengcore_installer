@@ -15,7 +15,7 @@ Choose option 3 to exit.
 Bootstrap file
 -----
 
-PENG bootstrap will sync to block 787,500 at once.
+PENG bootstrap will sync to block 807,400 at once.
 Unzip in datafolder & restart wallet client. Instructions are below.
 
 This bootstrap is on the same chain as the official explorers found here: 
