@@ -7,7 +7,7 @@ COIN_DAEMON='pengd'
 COIN_CLI='peng-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_REPO='https://github.com/coinpeng'
-COIN_TGZ='https://github.com/coinpeng/pengcore_installer/releases/download/PENG/peng-latest-ubuntu16-vps.zip'
+COIN_TGZ='https://github.com/coinpeng/pengcore_installer/releases/download/PENG/peng-1.4.1-ubuntu16-vps.zip'
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
 COIN_NAME='peng'
 COIN_PORT=3182
@@ -22,11 +22,11 @@ NC='\033[0m'
 function download_node() {
   echo -e "Prepare to download $COIN_NAME binaries"
   cd /usr/local/bin
-  wget https://github.com/coinpeng/pengcore_installer/releases/download/PENG/peng-latest-ubuntu16-vps.zip > /dev/null 2>&1
+  wget https://github.com/coinpeng/pengcore_installer/releases/download/PENG/peng-1.4.1-ubuntu16-vps.zip > /dev/null 2>&1
   sleep 30 > /dev/null 2>&1
-  unzip peng-latest-ubuntu16-vps.zip > /dev/null 2>&1
+  unzip peng-1.4.1-ubuntu16-vps.zip > /dev/null 2>&1
   chmod 777 pengd peng-tx peng-cli > /dev/null 2>&1
-  rm -rf /usr/local/bin/peng-latest-ubuntu16-vps.zip
+  rm -rf /usr/local/bin/peng-1.4.1-ubuntu16-vps.zip
   cd ..
   echo -e "Done."
   clear
